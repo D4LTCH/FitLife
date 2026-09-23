@@ -11,17 +11,20 @@ user_name = input("Введите свое имя: ")
 while True:
     try:
         user_age = int(
-            input("Введите количество полных лет, в целых числах: "))
+            input("Введите количество полных лет, в целых числах: ")
+        )
         break
     except ValueError:
         print("Вы ввели не число!")
 
 user_weight = float(
     input("Введите свой вес в (кг): ")
-    .replace(",", "."))
+    .replace(",", ".")
+)
 user_height = float(
     input("Введите свой рост в (метрах) 'например - 1.70': ")
-    .replace(",", "."))
+    .replace(",", ".")
+)
 
 
 def bmi_calculator():
